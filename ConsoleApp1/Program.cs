@@ -8,13 +8,13 @@ static double CalculateAverage(int[] numbers)
         throw new ArgumentException("Input array cannot be empty or null.");
     }
 
-    int sum = 0;
+    int s = 0;
     foreach (int num in numbers)
     {
-        sum += num;
+        s += num;
     }
 
-    return (double)sum / numbers.Length;
+    return (double)s / numbers.Length;
 }
 static int FindMaxValue(int[] numbers)
 {
