@@ -16,3 +16,21 @@ static double CalculateAverage(int[] numbers)
 
     return (double)sum / numbers.Length;
 }
+static int FindMaxValue(int[] numbers)
+{
+    if (numbers == null || numbers.Length == 0)
+    {
+        throw new ArgumentException("Input array cannot be empty or null.");
+    }
+
+    int max = numbers[0];
+    foreach (int num in numbers)
+    {
+        if (num > max)
+        {
+            max = num;
+        }
+    }
+
+    return max;
+}
