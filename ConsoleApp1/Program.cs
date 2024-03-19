@@ -9,9 +9,9 @@ static double CalculateAverage(int[] numbers)
     }
 
     int sum = 0;
-    foreach (int num in numbers)
+    foreach (int n in numbers)
     {
-        sum += num;
+        sum += n;
     }
 
     return (double)sum / numbers.Length;
